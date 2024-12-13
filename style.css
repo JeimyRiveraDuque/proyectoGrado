@@ -1,0 +1,163 @@
+ body {
+    background-image: url(imagenes/Diseño\ sin\ título.png); 
+    background-size: cover; 
+    background-position: center; 
+    height: 150vh; 
+    margin: 0; 
+    width: 100%; 
+    background-repeat: no-repeat; 
+}
+
+body {
+    height: 100vh; 
+    background-color: #f8f9fa; 
+}
+
+.circles-container {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: flex-start; 
+    z-index: 0;
+}
+
+.circle {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    opacity: 0; 
+    transition: opacity 0.5s; 
+    position: absolute; 
+}
+
+.visible {
+    opacity: 0.7;
+}
+
+.form-container {
+    position: relative;
+    z-index: 1;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: px;
+    padding: 10px;
+}
+
+.image-container {
+    width: calc(100% / 4 - 40px); 
+    max-width: 320px; 
+    height: auto;
+    border: 2px solid #bba7a7;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .image-container {
+        width: calc(100% / 2 - 20px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .image-container {
+        width: 100%; 
+    }
+}
+
+
+.presentation-text {
+    margin-top: 20px; 
+}
+.footer {
+    color: rgb(14, 11, 11); 
+    text-align: center; 
+    padding: 30px 0; 
+    position: relative; 
+    margin-top: auto; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    flex-direction: column;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 150px; /* Añadir margen superior */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+.image-container button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding: 8px;
+}
+.container {
+    margin-top: 250px;
+  }
+
+.image-container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilo para el círculo */
+.circles-container {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Cambiado a izquierda */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.5);
+    display: block; /* Mostrado por defecto */
+}
+
+.btn-additional {
+    margin-top: 20px; /* Espacio entre la galería y el botón */
+    font-size: 1.2rem; /* Tamaño de fuente del botón */
+}
